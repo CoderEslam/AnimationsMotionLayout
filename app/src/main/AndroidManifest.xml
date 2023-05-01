@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnimationsMotionLayout"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+<!--        <activity android:name=".menuselection.MenuSelectionDetailActivity"></activity>-->
+        <activity android:name=".menuselection.MenuSelectionCarouselActivity" />
+<!--        <activity android:name=".circularsongs.CircularSongsActivity" />-->
+<!--        <activity android:name=".circularsteps.CircularStepsActivity" />-->
+<!--        <activity android:name=".circularsteps.Demo" />-->
+<!--        <activity android:name=".flight.FlightSelectorActivity" />-->
+        <activity android:name=".modopay.ModoPaymentActivity" />
+        <activity android:name=".verticalsnake.VerticalSnakeActivity" />
+        <activity android:name=".pivotrotation.FoodCircleTabsActivity" />
+        <activity android:name=".carouselhelper.CarouselHelperActivity" />
+        <activity android:name=".sampleskeycycle.KeyCycleSampleActivity" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity android:name=".motionwithar.MotionAndAugmentedRealityActivity" />
+        <activity android:name=".democonstraintset.MotionDemoActivity" />
+        <activity android:name=".democonstraintset.CustomAttributeDemoActivity" />
+        <activity android:name=".democonstraintset.LayoutDemoActivity" />
+        <activity android:name=".democonstraintset.PropertySetDemoActivity" />
+        <activity android:name=".democonstraintset.TransformDemoActivity" />
+        <activity android:name=".democonstraintset.DemoConstraintSetActivity" />
+        <activity android:name=".telegramheaderdemo.TelegramHeaderDemoActivity" />
+        <activity android:name=".testbutton.TestButtonActivity" />
+        <activity
+            android:name=".pillcards.PillCardsActivity"
+            android:label="@string/title_activity_pill_cards"
+             />
+        <activity android:name=".flow.FlowDemoActivity" />
+        <activity android:name=".horizontalcarousel.HorizontalCarouselActivity" />
+        <activity android:name=".sensor.CardSensorActivity" />
+        <activity android:name=".starbucks.StarbucksDetailActivity" />
+        <activity android:name=".examplekeyposition.PositionKeyExampleActivity" />
+        <activity android:name=".examplekeyposition.KeyPositionPathActivity" />
+        <activity android:name=".examplekeyposition.KeyPositionParentActivity" />
+        <activity android:name=".examplekeyposition.KeyPositionDeltaActivity" />
+        <activity android:name=".rotationcard.scenes.RotationCardScene2Activity" />
+        <activity android:name=".rotationcard.scenes.RotationCardScene1Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene4Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene3Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene2Activity" />
+        <activity android:name=".storiesinstagram.scenes.InstagramStoryScene1Activity" />
+        <activity android:name=".storiesinstagram.InstagramStoryHomeActivity" />
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene3Activity" />
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene2Activity" />
+        <activity android:name=".verticalstackcards.scenes.VerticalStackCardsScene1Activity" />
+        <activity android:name=".verticalstackcards.VerticalStackCardsHomeActivity" />
+        <activity android:name=".circularcards.scenes.CircularCardsScene5Activity" />
+        <activity android:name=".circularcards.scenes.CircularCardsScene4Activity" />
+        <activity android:name=".circularcards.scenes.CircularCardsScene3Activity" />
+        <activity android:name=".circularcards.scenes.CircularCardsScene2Activity" />
+        <activity android:name=".circularcards.scenes.CircularCardsScene1Activity" />
+        <activity android:name=".circularcards.CircularCardsDemoActivity" />
+        <activity android:name=".circularcards.CircularCardsHomeActivity" />
+        <activity android:name=".rotationcard.RotationCardHomeActivity" />
+        <activity android:name=".storiesinstagram.InstagramStoryDemoActivity" />
+        <activity android:name=".rotationcard.RotationCardDemoActivity" />
+        <activity android:name=".verticalstackcards.VerticalStackCardsDemoActivity" />
+
+    </application>
+
+</manifest>
